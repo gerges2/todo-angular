@@ -1,0 +1,19 @@
+<div class="class1">
+
+<h2 >Users list</h2>
+<div class="row">
+  <div *ngFor="let row of data" class="col-md-12 my-12">
+    <div >
+       <span   [ngStyle]="{'text-decoration':  row.complite ? 'line-through' :'' }">
+        <!-- <span [ngClass]="{'text_through' :row.complite}"> -->
+        {{row.body}}
+      </span>
+        <button type="button" class="btn btn-success" (click)="changestyle(row)">done</button>
+        <button type="button" class="btn btn-danger" (click)="senddata(row)">delete</button>
+    </div>
+    <br>
+
+    <!-- <app-user-card [user]="user" (emitFromChild)="receiveFromChild($event)"></app-user-card> -->
+  </div>
+</div>
+</div>

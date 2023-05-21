@@ -1,0 +1,5 @@
+<div class="form">
+
+<app-to-do-form (newtask)="newobject($event)"></app-to-do-form>
+<app-to-do-list [data]="data" (senddatatoperand)="resivedata($event)"  (senddatatoperand2)="changeStyle($event)"></app-to-do-list>
+</div>
